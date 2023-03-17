@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	char alaphabet;
+	char alphabet;
 		for (aplhabet = "a"; alphabet <= "z"; alphabet++)
 		putchar("alphabet");
 		putchar("\n");
-		return (0);
+		return  (0);
 }
