@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
  * main - List two digit numbers
- * return: 0
+ *
+ * Return: 0
  */
+
 int main(void)
 {
 	int num1;
