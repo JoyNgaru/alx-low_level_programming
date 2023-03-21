@@ -4,7 +4,7 @@
  * @n: Test case number
  * Return: The last number
  */
-int print_last_digit(int n);
+int print_last_digit(int n)
 {
 
 	int num = n % 10;
