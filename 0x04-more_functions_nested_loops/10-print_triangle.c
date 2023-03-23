@@ -9,6 +9,8 @@ void print_triangle(int size)
 
 	if (size <= 0)
 		_putchar('\n');
+	else
+	{
 	for (num 1 = 1; num1 <= size num1++)
 	{
 		for  (num2 = num1; num2 < size; num2++)
@@ -17,5 +19,5 @@ void print_triangle(int size)
 			_putcha('#');
 		_putchar('\n');
 	}
+	}
 }
-
