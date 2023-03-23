@@ -1,23 +1,31 @@
-#include"main.h"
+#include "main.h"
+
 /**
- * print_triangle - print triangle
- * @size: test case
+ *  print_triangle - print out a triangle
+  *@size: size of the triangle
  */
+
 void print_triangle(int size)
 {
-	int num1, num2;
+	int height, length, base;
 
 	if (size <= 0)
-		_putchar('\n');
-	else
 	{
-	for (num 1 = 1; num1 <= size num1++)
-	{
-		for  (num2 = num1; num2 < size; num2++)
-			_putchar(' ');
-		for (num2 = num1; nm2 <= num1; num2++)
-			_putcha('#');
 		_putchar('\n');
 	}
+	else
+	{
+		for (height = 1; height <= size; height++)
+		{
+			for (base = size - height; base >= 1; base--)
+			{
+				_putchar(' ');
+			}
+			for (length = 1; length <= height; length++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
 	}
 }
