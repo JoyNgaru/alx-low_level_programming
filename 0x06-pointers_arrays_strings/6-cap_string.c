@@ -7,6 +7,8 @@
 char *cap_string(char *s)
 {
 	int x = 0, y;
+
+
 	char specialChar[13] = " \t\n,;.!?\"(){}";
 
 
