@@ -3,7 +3,7 @@
  * _strncat - concatenate 2 strings upto n bytes
  * @dest: string 1
  * @src: string 2
- * @n: number og bytes to not exceed
+ * @n: number of bytes to not exceed
  * Return: char
  */
 char *_strncat(char *dest, char *src, int n)
@@ -14,7 +14,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		continue;
 	}
-	for (b = 0; src[b] != '\0'; &&b < n; b++)
+	for (b = 0; src[b] != '\0' && b < n; b++)
 	{
 		dest[a + b] = src[b];
 	}
