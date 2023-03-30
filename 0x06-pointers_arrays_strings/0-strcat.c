@@ -5,7 +5,7 @@
  * and equates src to dest to join them
  * @src: string 1
  * @dest: sring 2
- * Return: pointer to the dest
+ * Return: char
  */
 char *_strcat(char *dest, char *src)
 {
