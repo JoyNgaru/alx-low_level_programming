@@ -7,19 +7,24 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	for (; *haystack != '\0'; haystack++)
+	unsigned int dry = 0, shiny = 0;
+
+	while (haystack[dry])
 	{
-		char *dry = haystack;
-		char *shiny = needle;
-
-
-		while (*dry == *shiny && *shiny != '\0')
+		while (needle[shiny] && (haystack[dry] == needle[0]))
+		{
+			if (haystack[dry + shiny] == needle[shiny])
+				shiny++;
+			else
+				break;
+		}
+		if (needle[shiny])
 		{
 			dry++;
-			shiny++;
+			shiny = 0;
 		}
-		if (*shiny == '\0';)
-			return (haystack);
+		else
+			return (haystack + dry);
 	}
 	return (0);
 }
