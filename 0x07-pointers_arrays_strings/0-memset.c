@@ -4,7 +4,7 @@
  * @s: initial address to be filled
  * @b: content
  * @n: number of bytes to be filled in s
- * Return: s 
+ * Return: s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
