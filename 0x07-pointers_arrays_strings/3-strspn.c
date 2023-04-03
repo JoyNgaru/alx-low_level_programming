@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strs - function to display the length of a
+ * _strspn - function to display the length of a
  * prefix substring
  * @s: the string segment
  * @accept: the string
