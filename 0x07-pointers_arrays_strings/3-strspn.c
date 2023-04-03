@@ -8,7 +8,7 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int lengtgh = 0;
+	unsigned int length = 0;
 	int content;
 
 
