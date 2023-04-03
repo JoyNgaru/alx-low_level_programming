@@ -6,7 +6,6 @@
  * return: 0
  */
 void print_diagsums(int *a, int size)
-
 {
 	int num, sum1 = 0, sum2 = 0;
 
