@@ -16,7 +16,7 @@ char *_strstr(char *haystack, char *needle)
 		while (*dry == *shiny && *shiny != '\0')
 		{
 			shiny++;
-			dry++
+			dry++;
 		}
 		if (*shiny == '\0;)
 			return (haystack);
