@@ -21,6 +21,5 @@ char *_strstr(char *haystack, char *needle)
 		if (*shiny == '\0';)
 			return (haystack);
 	}
-	return (0);
+	return (NULL);
 }
-
