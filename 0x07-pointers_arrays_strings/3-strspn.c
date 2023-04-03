@@ -11,6 +11,7 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int lengtgh = 0;
 	int content;
 
+
 	while (*s)
 	{
 	for (content = 0; accept[content]; content++)
@@ -18,7 +19,7 @@ unsigned int _strspn(char *s, char *accept)
 		if (*s == accept[content])
 		{
 		length++;
-	break;
+		break;
 		}
 		else if (accept[content + 1] == '\0')
 			return (length);
