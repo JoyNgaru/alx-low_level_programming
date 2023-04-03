@@ -18,7 +18,7 @@ char *_strstr(char *haystack, char *needle)
 			shiny++;
 			dry++;
 		}
-		if (*shiny == '\0;)
+		if (*shiny == '\0';)
 			return (haystack);
 	}
 	return (0);
