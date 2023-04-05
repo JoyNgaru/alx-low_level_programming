@@ -29,7 +29,7 @@ int prime_scanner(int n, int freq)
 	{
 		return (1);
 	}
-	else if (n % freq) == 0 && freq > 0)
+	else if (n % freq == 0 && freq > 0)
 	{
 		return (0);
 	}
