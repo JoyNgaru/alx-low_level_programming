@@ -26,13 +26,12 @@ int is_prime_number(int n)
 int prime_scanner(int n, int freq)
 {
 	if (freq == 1)
-	{
+	
 		return (1);
-	}
-	else if (n % freq == 0 && freq > 0)
-	{
+	
+	if (n % freq == 0 && freq > 0)
+	
 		return (0);
-	}
-	else
-		return (prime_scanner(n, freq - 1));
+	
+	return (prime_scanner(n, freq - 1));
 }
