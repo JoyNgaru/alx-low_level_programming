@@ -1,5 +1,5 @@
 #include "main.h"
-int prime_scanner(int n, int freq)
+int prime_scanner(int n, int freq);
 /**
  * is_prime_number - is number a prime number?
  * a prime number is only divisible by 1 or itself
