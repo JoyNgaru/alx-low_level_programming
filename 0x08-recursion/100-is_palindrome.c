@@ -27,7 +27,7 @@ int _strlen_recursion(char *s)
 }
 
 /**
- * check_pal - checks the characters recursively for palindrome
+ * palindrome_scanner - checks the characters recursively for palindrome
  * @s: string in question
  * @freq: checks its frequency
  * @length: length of the string
