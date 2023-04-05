@@ -9,13 +9,13 @@ int prime_scanner(int n, int freq);
 int is_prime_number(int n)
 {
 	if (n <= 1)
-	{
+	
 		return (0);
-	}
-	else
-	{
+
+	
+	
 		return (prime_scanner(n, n - 1));
-	}
+}
 
 /**
  * prime_scanner - function to scan the numbers
