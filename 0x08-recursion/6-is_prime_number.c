@@ -10,7 +10,7 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-		return (prime_scanner(n, n - 1));
+	return (prime_scanner(n, n - 1));
 }
 /**
  * prime_scanner - function to scan the numbers
