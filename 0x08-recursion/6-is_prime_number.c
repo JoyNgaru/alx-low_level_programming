@@ -9,14 +9,9 @@ int prime_scanner(int n, int freq);
 int is_prime_number(int n)
 {
 	if (n <= 1)
-	
 		return (0);
-
-	
-	
 		return (prime_scanner(n, n - 1));
 }
-
 /**
  * prime_scanner - function to scan the numbers
  * @n: is the number to check
@@ -26,12 +21,8 @@ int is_prime_number(int n)
 int prime_scanner(int n, int freq)
 {
 	if (freq == 1)
-	
 		return (1);
-	
 	if (n % freq == 0 && freq > 0)
-	
 		return (0);
-	
 	return (prime_scanner(n, freq - 1));
 }
