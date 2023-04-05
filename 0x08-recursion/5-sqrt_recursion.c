@@ -1,4 +1,5 @@
 #include "main.h"
+int sqrt_scanner(int n, int freq);
 /**
  * _sqrt_recursion - output the squareroot of a recursion
  * sqrt_scanner - natural sqrt
