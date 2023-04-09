@@ -20,16 +20,19 @@ int main(int argc, char **argv)
 		return (0);
 	}
 
-	if (*symbol)
-	{
-		printf("Error\n");
-			return (1);
-	}
+	
 
 	for ( digit1 = 1; argv[digit1]; digit1++)
 	{
 		digit2 = strtol(argv[digit1], &symbol, 10);
+	
 	}
+	 if (*symbol)
+        {
+                printf("Error\n");
+                        return (1);
+        }
+
 		else
 		{
 			sum = sum +  n;
