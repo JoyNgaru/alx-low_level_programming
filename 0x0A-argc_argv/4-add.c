@@ -12,7 +12,7 @@
 int main(int argc, char **argv)
 {
 	int digit1, digit2, sum = 0;
-	char *symbol;
+	char flag;
 
 
 	if (argc < 2)
@@ -23,8 +23,8 @@ int main(int argc, char **argv)
 
 	for (digit1 = 1; argv[digit1]; digit1++)
 	{
-		digit2 = strtol(argv[digit1], &symbol, 10);
-		if (*symbol)
+		digit2 = strtol(argv[digit1], &flag, 10);
+		if (*flag)
 		{
 			printf("Error\n");
 			return (1);
