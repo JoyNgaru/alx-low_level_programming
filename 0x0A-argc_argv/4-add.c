@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 
 	for ( digit1 = 1; argv[digit1]; digit1++)
 	{
-		digit2 = atoi(argv[digit1], &symbol, 10);
+		digit2 = strtol(argv[digit1], &symbol, 10);
 	}
 		else
 		{
