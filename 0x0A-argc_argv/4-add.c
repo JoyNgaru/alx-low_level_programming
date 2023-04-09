@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	for (num = 1; num < argc; num++)
 	{
 		num2 = argv[num];
-		for (symbol = arg; *symbol != '\0'; symbol++)
+		for (symbol = num2; *symbol != '\0'; symbol++)
 		{
 			if (!isdigit(*symbol))
 			{
