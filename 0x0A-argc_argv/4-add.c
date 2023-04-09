@@ -1,4 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include "main.h"
 /**
  * main - function that outputs the sum of digits
  * @argc: argument counter
