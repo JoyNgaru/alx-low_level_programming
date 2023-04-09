@@ -6,28 +6,28 @@
  * main - function to add two arguments
  * @argc: Total number of arguments passed
  * @argv: Arguments in the array
- * Return: 0 if success,else,  1
+ * Return: 0 if success,else, 1
  */
 int main(int argc, char *argv[])
 {
-	int sum;
-	int i;
-	const char *arg;
-	const char *p;
+	int sum = 0;
+	int num;
+	const char *num2;
+	const char *symbol;
 
-	sum = 0;
-	for (i = 1; i < argc; i++)
+	
+	for (num = 1; num < argc; num++)
 	{
-		arg = argv[i];
-		for (p = arg; *p != '\0'; p++)
+		num2 = argv[num];
+		for (symbol = arg; *symbol != '\0'; symbol++)
 		{
-			if (!isdigit(*p))
+			if (!isdigit(*symbol))
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-		sum += atoi(arg);
+		sum += atoi(num2);
 	}
 	printf("%d\n", sum);
 	return (0);
