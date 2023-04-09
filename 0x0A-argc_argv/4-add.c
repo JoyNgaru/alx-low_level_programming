@@ -14,30 +14,26 @@ int main(int argc, char **argv)
 	int digit1, digit2, sum = 0;
 	char *symbol;
 
+
 	if (argc < 2)
 	{
 		printf("0\n");
 		return (0);
 	}
 
-	
-
-	for ( digit1 = 1; argv[digit1]; digit1++)
+	for (digit1 = 1; argv[digit1]; digit1++)
 	{
 		digit2 = strtol(argv[digit1], &symbol, 10);
-	
-	}
-	 if (*symbol)
-        {
-                printf("Error\n");
-                        return (1);
-        }
-
+		if (*symbol)
+		{
+			printf("Error\n");
+			return (1);
+		}
 		else
 		{
-			sum = sum +  n;
+			sum += n;
 		}
-
+	}
 	printf("%d\n", sum);
 
 	return (0);
