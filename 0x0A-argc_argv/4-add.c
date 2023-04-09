@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
 	const char *num2;
 	const char *symbol;
 
-	
 	for (num = 1; num < argc; num++)
 	{
 		num2 = argv[num];
