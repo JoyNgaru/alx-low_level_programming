@@ -2,22 +2,24 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include "main.h"
+
 /**
- * main - function to add two arguments
- * @argc: Total number of arguments passed
- * @argv: Arguments in the array
- * Return: 0 if success,else, 1
+ * main - Give change
+ * @argc: how many arguments passed
+ * @argv: atual arguments that have been passed
+ * Return: 0 if successful, else, 1
  */
+
 int main(int argc, char *argv[])
 {
-	int sum = 0;
-	int num;
+	int total_sum = 0;
+	int num1;
 	const char *num2;
 	const char *symbol;
 
-	for (num = 1; num < argc; num++)
+	for (num1 = 1; num1 < argc; num1++)
 	{
-		num2 = argv[num];
+		num2 = argv[num1];
 		for (symbol = num2; *symbol != '\0'; symbol++)
 		{
 			if (!isdigit(*symbol))
@@ -26,8 +28,8 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		sum += atoi(num2);
+		total_sum += atoi(num2);
 	}
-	printf("%d\n", sum);
+	
 	return (0);
 }
