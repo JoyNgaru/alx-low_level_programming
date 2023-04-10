@@ -2,11 +2,10 @@
 #include <stdlib.h>
 
 /**
- * main -function that performs multiplication
- * @argc: argument count
- * @argv: arguments
- *
- * Return: 0
+ * main - Outputs product of arguments
+ * @argc: how many arguments passed
+ * @argv: atual arguments that have been passed
+ * Return: 0 if successful, else, 1
  */
 int main(int argc, char **argv)
 {
