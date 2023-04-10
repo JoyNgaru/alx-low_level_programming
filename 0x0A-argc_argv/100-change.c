@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 
 	for (arg = 0; arg < 5 && amount >= 0; arg++)
 	{
-		while (amount => cents[arg])
+		while (amount >= cents[arg])
 		{
 			change++;
 			amount -= cents[arg];
