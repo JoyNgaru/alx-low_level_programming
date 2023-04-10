@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int num, j, change;
+	int amount, arg, change;
 	int cents[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
@@ -19,21 +19,21 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	num = atoi(argv[1]);
+	amount = atoi(argv[1]);
 	change = 0;
 
-	if (num < 0)
+	if (amount < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
 
-	for (j = 0; j < 5 && num >= 0; j++)
+	for (arg = 0; arg < 5 && amount >= 0; arg++)
 	{
-		while (num >= cents[j])
+		while (amount => cents[arg])
 		{
 			change++;
-			num -= cents[j];
+			amount -= cents[arg];
 		}
 	}
 
