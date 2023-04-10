@@ -13,13 +13,13 @@
 int main(int argc, char *argv[])
 {
 	int total_sum = 0;
-	int num1;
+	int arg;
 	const char *num2;
 	const char *symbol;
 
-	for (num1 = 1; num1 < argc; num1++)
+	for (arg = 1; arg < argc; arg++)
 	{
-		num2 = argv[num1];
+		num2 = argv[arg];
 		for (symbol = num2; *symbol != '\0'; symbol++)
 		{
 			if (!isdigit(*symbol))
