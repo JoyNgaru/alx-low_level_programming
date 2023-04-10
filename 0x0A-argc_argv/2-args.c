@@ -2,8 +2,8 @@
 
 /**
  * main - function to output the arguments it receives.
- * @argc: argument counter
- * @argv: arguments passed
+ * @argc: number of arguments passed
+ * @argv: the arguments that have been passed
  *
  * Return: 0
  */
