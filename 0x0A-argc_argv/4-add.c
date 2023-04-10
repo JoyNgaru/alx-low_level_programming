@@ -30,6 +30,5 @@ int main(int argc, char *argv[])
 		}
 		total_sum += atoi(num2);
 	}
-	
 	return (0);
 }
