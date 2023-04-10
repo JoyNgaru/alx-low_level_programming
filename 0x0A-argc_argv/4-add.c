@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * main - Give change
+ * main - Output summation of arguments
  * @argc: how many arguments passed
  * @argv: atual arguments that have been passed
  * Return: 0 if successful, else, 1
