@@ -30,7 +30,7 @@ char *argstostr(int ac, char **av)
 	{
 	for (content = 0; av[arg][content]; content++)
 	{
-		str[count] = av[arg][content];
+		new_string[count] = av[arg][content];
 		count++;
 	}
 	if (new_string[count] == '\0')
