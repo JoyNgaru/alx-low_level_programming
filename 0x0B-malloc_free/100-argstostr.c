@@ -17,7 +17,6 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 
 	for (arg = 0; arg < ac; arg++)
-	
 	{
 		for (content = 0; av[arg][content]; content++)
 			length++;
