@@ -11,7 +11,7 @@
 char *argstostr(int ac, char **av)
 {
 	char *new_string;
-	int arg, content, count, length = ac;
+	int arg, content, count, length;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -21,6 +21,7 @@ char *argstostr(int ac, char **av)
 		for (content = 0; av[arg][content]; content++)
 			length++;
 	}
+	length += ac;
 
 	new_string = malloc(sizeof(char) * length + 1);
 
@@ -34,7 +35,7 @@ char *argstostr(int ac, char **av)
 		for (content = 0; av[arg][content]; content++)
 			new_string[count++] = av[arg][content];
 
-		new_string[content++] = '\n';
+		new_string[count++] = '\n';
 	}
 
 	new_string[length] = '\0';
