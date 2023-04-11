@@ -75,7 +75,7 @@ char **strtow(char *str)
 
 		ltrs = word_length(str + count);
 
-		arr[]content_wrds = malloc(sizeof(char) * (ltrs + 1));
+		arr[content_wrds] = malloc(sizeof(char) * (ltrs + 1));
 
 		if (arr[content_wrds] == NULL)
 		{
