@@ -32,9 +32,9 @@ char *argstostr(int ac, char **av)
 		for (content = 0; av[arg][content]; content++)
 		{
 			new_string[count] = av[arg][content];
-			count++
+			count++;
 		}
-	if (str[r] == '\0')
+	if (new_string[content] == '\0')
 	{
 
 		new_string[count++] = '\n';
