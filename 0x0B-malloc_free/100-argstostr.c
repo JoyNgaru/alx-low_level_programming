@@ -21,21 +21,22 @@ char *argstostr(int ac, char **av)
 		for (content = 0; av[arg][content]; content++)
 			length++;
 	}
+	length += ac;
 
 	new_string = malloc(sizeof(char) * length + 1);
-	count = 0;
-
 	if (new_string == NULL)
 		return (NULL);
-
 	for (arg = 0; arg < ac; arg++)
 	{
-		for (content = 0; av[arg][content]; content++)
-		
-			new_string[count] = av[arg][content];
-			count++;
+	for (content = 0; av[arg][content]; content++)
+	{
+		str[count] = av[arg][content];
+		count++;
+	}
+	if (new_string[count] == '\0')
+	{
 		new_string[count++] = '\n';
 	}
-	new_string[content] == '\0';
+	}
 	return (new_string);
 }
