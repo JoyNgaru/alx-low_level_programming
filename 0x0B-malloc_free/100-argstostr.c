@@ -23,6 +23,7 @@ char *argstostr(int ac, char **av)
 	}
 
 	new_string = malloc(sizeof(char) * length + 1);
+	count = 0;
 
 	if (new_string == NULL)
 		return (NULL);
