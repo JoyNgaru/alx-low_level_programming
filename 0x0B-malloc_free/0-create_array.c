@@ -1,11 +1,13 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  *
  * create_array - function to create and initialize
  * array of chars using a specific char
  * @size: size of the arrray
  * @c: character to be assigned
- * Return: *array if successful, else 0
+ * Return: *array if successful, else NULL
  */
 char *create_array(unsigned int size, char c)
 {
