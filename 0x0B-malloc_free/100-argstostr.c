@@ -27,17 +27,18 @@ char *argstostr(int ac, char **av)
 	if (new_string == NULL)
 		return (NULL);
 
-	count = 0;
-
 	for (arg = 0; arg < ac; arg++)
 	{
 		for (content = 0; av[arg][content]; content++)
-			new_string[count++] = av[arg][content];
+		{
+			new_string[count] = av[arg][content];
+			count++
+		}
+	if (str[r] == '\0')
+	{
 
 		new_string[count++] = '\n';
 	}
-
-	new_string[length] = '\0';
-
+	}
 	return (new_string);
 }
