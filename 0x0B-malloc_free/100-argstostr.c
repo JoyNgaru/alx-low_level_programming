@@ -6,7 +6,7 @@
  * @ac: The number of arguments passed
  * @av: An array of pointers to the arguments.
  *
- * Return: If ac == 0, av == NULL, or the function fails - NULL, else,  a pointer to the new string.
+ * Return: NULL if ac is 0, av= NULL, or the function fails, else,  a pointer to the new string.
  */
 char *argstostr(int ac, char **av)
 {
@@ -21,7 +21,7 @@ char *argstostr(int ac, char **av)
 		for (content = 0; av[arg][content]; content++)
 			length++;
 	}
-	length += ac;
+	
 
 	new_string = malloc(sizeof(char) * length + 1);
 
