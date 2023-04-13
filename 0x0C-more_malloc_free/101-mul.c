@@ -10,9 +10,9 @@
  */
 int is_digit(char *s)
 {
-	int content 
-		
-		content = 0;
+	int content;
+
+	content = 0;
 
 	while (s[content])
 	{
@@ -31,7 +31,7 @@ int is_digit(char *s)
 int _strlen(char *s)
 {
 	int content;
-       
+
 	content = 0;
 
 	while (s[content] != '\0')
@@ -73,10 +73,10 @@ int main(int argc, char *argv[])
 		return (1);
 	for (i = 0; i <= length1 + length2; i++)
 		multi_answer[i] = 0;
-	for (length1 = length1- 1; length1 >= 0; length1--)
+	for (length1 = length1 - 1; length1 >= 0; length1--)
 	{
 		num1 = string1[length1] - '0';
-		carry = 0;
+		mod = 0;
 		for (length2 = _strlen(string2) - 1; length2 >= 0; length2--)
 		{
 			num2 = string2[len2] - '0';
