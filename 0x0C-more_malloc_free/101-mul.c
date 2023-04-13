@@ -60,8 +60,7 @@ void errors(void)
 int main(int argc, char *argv[])
 {
 	char *string1, *string2;
-	int length1, length2, new_length, content, mod = 0;
-	int num1, num2, *multi_answer, a = 0;
+	int length1, length2, new_length, content, mod, num1, num2, *mul, a = 0;
 
 	string1 = argv[1], string2 = argv[2];
 	if (argc != 3 || !is_digit(string1) || !is_digit(string2))
@@ -70,33 +69,34 @@ int main(int argc, char *argv[])
 	length2 = _strlen(string2);
 	new_length = length1 + length2 + 1;
 	multi_answer = malloc(sizeof(int) * new_length);
-	if (!multi_answer)
+	if (!mul)
 		return (1);
 	for (content = 0; content <= length1 + length2; content++)
-		multi_answer[content] = 0;
+		mul[content] = 0;
 	for (length1 = length1 - 1; length1 >= 0; length1--)
 	{
 		num1 = string1[length1] - '0';
+		mod = 0;
 		for (length2 = _strlen(string2) - 1; length2 >= 0; length2--)
 		{
 			num2 = string2[length2] - '0';
-			mod += multi_answer[length1 + length2 + 1] + (num1 * num2);
-			multi_answer[length1 + length2 + 1] = mod % 10;
+			mod += mul[length1 + length2 + 1] + (num1 * num2);
+			mul[length1 + length2 + 1] = mod % 10;
 			mod /= 10;
 		}
 		if (mod > 0)
-			multi_answer[length1 + length2 + 1] += mod;
+			mul[length1 + length2 + 1] += mod;
 	}
 	for (content = 0; content < new_length - 1; content++)
 	{
-		if (multi_answer[content])
+		if (mul[content])
 			a = 1;
 		if (a)
-			_putchar(multi_answer[content] + '0');
+			_putchar(mul[content] + '0');
 	}
 	if (!a)
 		_putchar('0');
 	_putchar('\n');
-	free(multi_answer);
+	free(mul);
 	return (0);
 }
