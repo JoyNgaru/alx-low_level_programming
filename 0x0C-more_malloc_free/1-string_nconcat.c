@@ -39,7 +39,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (content2 = 0; content2 < n; content2++, content1++) /* If n is greater or equal to the length of s2 then use the entire string s2 */
 	{
-		concat[content1] = s2[content2];
+		pointer[content1] = s2[content2];
 	}
 
 	pointer[content1] = '\0'; /* End the process when we get to the null terminator */
