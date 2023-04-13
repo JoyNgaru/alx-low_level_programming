@@ -3,47 +3,46 @@
 
 /**
  * string_nconcat - joins two strings
- * @s1: string 1
- * @s2: string 2
- * @n: amount of bytes for s2 to concatenate to s1 * Return: pointer to concatenated strig in memory
+ * @s1: main string to receive s2 
+ * @s2: string to be joined to s1
+ * @n: amount of bytes for s2 to be joined to s1
+ * Return: pointer to concatenated string in memory
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i;
-	unsigned int j;
-	unsigned int s1_len;
-	unsigned int concat_len;
-	char *concat;
-
-	s1_len = 0;
+	unsigned int content1;
+	unsigned int content2;
+	unsigned int length_s1 = 0;
+	unsigned int new_length;
+	char *pointer;
 
 	if (s1 == NULL)
-		s1 = "";
+		s1 = "";/*if NULL is passed, treat it as an empty string*/
 
 	if (s2 == NULL)
-		s2 = "";
+		s2 = "";/*if NULL is passed, treat it as an empty     string*/
 
-	for (i = 0; s1[i]; i++)
-		s1_len++;
+	for (content1 = 0; s1[content1]; content1++)
+		length_s1++;
 
-	concat_len = s1_len + n;
+	new_length = length_s1 + n;/* new space in memory */
 
-	concat = malloc(sizeof(char) * (concat_len + 1));
-	if (concat == NULL)
+	pointer = malloc(sizeof(char) * (new_length + 1));/* +1 for null terminator */
+	if (pointer == NULL) /*If the function fails, it should return NULL */
 		return (NULL);
 
-	for (i = 0; i < s1_len; i++)
+	for (content1 = 0; content1 < length_s1; content1++) /* check for every value of s1 and increament it from 0 */
 	{
-		concat[i] = s1[i];
+		pointer[content1] = s1[content1];
 	}
 
-	for (j = 0; j < n; j++, i++)
+	for (content2 = 0; content2 < n; content2++, content1++) /* If n is greater or equal to the length of s2 then use the entire string s2 */
 	{
-		concat[i] = s2[j];
+		concat[content1] = s2[content2];
 	}
 
-	concat[i] = '\0';
+	pointer[content1] = '\0'; /* End the process when we get to the null terminator */
 
-	return (concat);
+	return (pointer);
 }
