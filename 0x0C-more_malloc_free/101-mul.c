@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
 		if (mod > 0)
 			multi_answer[length1 + length2 + 1] += mod;
 	}
-	for (i = 0; i < new_length - 1; i++)
+	for (content = 0; content < new_length - 1; content++)
 	{
 		if (multi_answer[content])
 			a = 1;
