@@ -79,7 +79,7 @@ int main(int argc, char *argv[])
 		mod = 0;
 		for (length2 = _strlen(string2) - 1; length2 >= 0; length2--)
 		{
-			num2 = string2[len2] - '0';
+			num2 = string2[length2] - '0';
 			mod += multi_answer[length1 + length2 + 1] + (num1 * num2);
 			multi_answer[length1 + length2 + 1] = mod % 10;
 			mod /= 10;
