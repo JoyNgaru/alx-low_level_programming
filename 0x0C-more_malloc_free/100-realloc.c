@@ -3,7 +3,7 @@
 # include <stdio.h>
 /**
  * _realloc - function to reallocate a memory block
- * @ptr: pointer to the memory previously allocated 
+ * @ptr: pointer to the memory previously allocated
  * @old_size: current memory space for ptr
  * @new_size: new size of the new memory block
  * Return: new pointer
