@@ -60,7 +60,8 @@ void errors(void)
 int main(int argc, char *argv[])
 {
 	char *string1, *string2;
-	int length1, length2, new_length, content, mod, num1, num2, *multi_answer, a = 0;
+	int length1, length2, new_length, content, mod = 0;
+	int num1, num2, *multi_answer, a = 0;
 
 	string1 = argv[1], string2 = argv[2];
 	if (argc != 3 || !is_digit(string1) || !is_digit(string2))
@@ -76,7 +77,6 @@ int main(int argc, char *argv[])
 	for (length1 = length1 - 1; length1 >= 0; length1--)
 	{
 		num1 = string1[length1] - '0';
-		mod = 0;
 		for (length2 = _strlen(string2) - 1; length2 >= 0; length2--)
 		{
 			num2 = string2[length2] - '0';
