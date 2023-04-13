@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
 	length1 = _strlen(string1);
 	length2 = _strlen(string2);
 	new_length = length1 + length2 + 1;
-	multi_answer = malloc(sizeof(int) * new_length);
+	mul = malloc(sizeof(int) * new_length);
 	if (!mul)
 		return (1);
 	for (content = 0; content <= length1 + length2; content++)
