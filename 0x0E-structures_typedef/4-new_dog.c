@@ -36,7 +36,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	int dog_info;
 
-	for (dog_inf = 0; src[dog_info] != '\0'; dog_info++)
+	for (dog_info = 0; src[dog_info] != '\0'; dog_info++)
 	{
 		dest[dog_info] = src[dog_info];
 	}
