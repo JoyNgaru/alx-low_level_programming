@@ -14,14 +14,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (name == NULL || owner == NULL)
 		return (NULL);
-	dog _ptr= malloc(sizeof(dog_t));
-	if (dog _ptr== NULL)
+	dog_ptr= malloc(sizeof(dog_t));
+	if (dog_ptr== NULL)
 		return (NULL);
 	for (dog_det = 0; name[dog_det]; dog_det++)
 		;
 	dog_det++;
 	dog_ptr->name = malloc(dog_det * sizeof(char));
-	if (dog->name == NULL)
+	if (dog_ptr->name == NULL)
 	{
 		free(dog_ptr);
 		return (NULL);
