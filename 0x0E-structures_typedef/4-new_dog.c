@@ -1,6 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 char *_strcpy(char *dest, char *src);
+int _strlen(char *s)
 /**
  * new_dog - Initializes the details of a new dog
  * @name: Pointer to dog name
@@ -45,3 +46,24 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	return (dest);
 }
+
+/**
+ * _strlen - returns the length of a string
+ * @s: string to evaluate
+ *
+ * Return: the length of the string
+ */
+int _strlen(char *s)
+{
+	int dog_info;
+
+	dog_info = 0;
+
+	while (s[dog_info] != '\0')
+	{
+		dog_info++;
+	}
+
+	return (dog_info);
+}
+
