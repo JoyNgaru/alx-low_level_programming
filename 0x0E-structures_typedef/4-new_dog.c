@@ -23,6 +23,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	_strcpy(dog->owner, owner);
 
 	return (dog);
+/**
+ * *_strcpy - copies the string source to destination
+ * @dest: string to receive copied text
+ * @src: string to be copied
+ *
+ * Return: the pointer to destion
+ */
+
 
 	char *_strcpy(char *dest, char *src)
 {
