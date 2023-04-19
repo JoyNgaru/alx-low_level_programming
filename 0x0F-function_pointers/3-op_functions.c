@@ -13,7 +13,7 @@ int op_add(int a, int b)
 
 /**
  * op_sub - subtracts two numbers
- * @a: num2
+ * @a: num1
  * @b: num2
  * Return: the difference
  */
@@ -21,10 +21,9 @@ int op_sub(int a, int b)
 {
 	return (a - b);
 }
-
 /**
  * op_mul - multiplies two numbers to produce product
- * @a: num1 
+ * @a: num1
  * @b: num2
  * Return: the product of 2 numbers
  */
@@ -48,7 +47,7 @@ int op_div(int a, int b)
  * op_mod -  function to give the modulus of two numbers
  * @a: num1
  * @b: num2
- * Return: the modulus after division 
+ * Return: the modulus after division
  */
 int op_mod(int a, int b)
 {
