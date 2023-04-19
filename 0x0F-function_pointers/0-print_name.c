@@ -9,10 +9,10 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (!f || !name)
+		if (!f || !name)
 			return;
 	if (name != NULL && f != NULL)
 		f(name);
-	else 
+	else
 		return;
 }
