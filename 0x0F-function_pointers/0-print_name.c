@@ -9,8 +9,10 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	while (name != NULL && f != NULL)
-	{
+	if (!f || !name)
+			return;
+	if (name != NULL && f != NULL)
 		f(name);
-	}
+	else 
+		return;
 }
