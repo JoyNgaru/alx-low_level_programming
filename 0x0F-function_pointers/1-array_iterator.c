@@ -10,10 +10,9 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int *last_point_of_array = array + size - 1;
+	int *end = array + size - 1;
 
-
-	if (array != NULL || action != NULL)
-		while (array <= last_point_of_array)
+	if (array && size && action)
+		while (array <= end)
 			action(*array++);
 }
