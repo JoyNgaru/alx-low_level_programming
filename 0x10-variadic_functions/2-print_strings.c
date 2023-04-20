@@ -13,7 +13,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *string
 	va_list arguments;
 
-	va_start(valist, n);
+	va_start(arguments, n);
 
 	for (count = 0; count < n; count++)
 	{
@@ -30,6 +30,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 
 	printf("\n");
-	va_end(valist);
+	va_end(arguments);
 }
 
