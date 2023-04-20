@@ -1,11 +1,7 @@
 #include "variadic_functions.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdarg.h>
-
 /**
- * print_char - print char
- * @args: list of arguments
+ * print_char - finction to output character values
+ * @args: list of arguments to be passed
  */
 
 void print_char(va_list args)
@@ -14,8 +10,8 @@ void print_char(va_list args)
 }
 
 /**
- * print_int - print int
- * @args: list of arguments
+ * print_int - function to print integer values
+ * @args: list of arguments to be passed
  */
 
 void print_int(va_list args)
@@ -24,8 +20,8 @@ void print_int(va_list args)
 }
 
 /**
- * print_float - print float
- * @args: list of arguments
+ * print_float - function to print float values
+ * @args: list of arguments to be passed
  */
 
 void print_float(va_list args)
@@ -34,8 +30,8 @@ void print_float(va_list args)
 }
 
 /**
- * print_string - print string
- * @args: list of arguments
+ * print_string - function to print string values
+ * @args: list of arguments to be passed
  */
 
 void print_string(va_list args)
@@ -51,13 +47,13 @@ void print_string(va_list args)
 }
 
 /**
- * print_all - prints anything
- * @format: list of types of arguments
+ * print_all - function to output all items
+ * @format: list of types of arguments to be printed
  */
 
 void print_all(const char * const format, ...)
 {
-	va_list args;
+	va_list arguments;
 	int i, j;
 	char *s1 = "";
 	char *s2 = ", ";
@@ -70,7 +66,7 @@ void print_all(const char * const format, ...)
 		{'\0', NULL}
 	};
 
-	va_start(args, format);
+	va_start(arguments, format);
 	i = 0;
 	while (format != NULL && format[i] != '\0')
 	{
@@ -80,7 +76,7 @@ void print_all(const char * const format, ...)
 			if (ops[j].c == format[i])
 			{
 				printf("%s", s1);
-				ops[j].f(args);
+				ops[j].f(arguments);
 				s1 = s2;
 			}
 			j++;
@@ -88,5 +84,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	printf("\n");
-	va_end(args);
+	va_end(arguments);
 }
