@@ -12,7 +12,7 @@
 typedef struct list_s
 {
 char *str;
-unsigned int size;
+unsigned int len;
 struct list_s *next;
 } list_t;
 
