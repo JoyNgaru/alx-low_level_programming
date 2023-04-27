@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <stddef.h>
 /* functions we will use for this task*/
 
 int _strlen(const char *s);/*get the length of a string*/
