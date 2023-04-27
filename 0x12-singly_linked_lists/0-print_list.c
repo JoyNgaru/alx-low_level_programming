@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib>
 #include "lists.h"
 
 #ifndef _PRINT_LIST
 #define _PRINT_LIST
 /* Format string to check if x = 0, if yes, nil, else returns x*/
-#define _FMS(x) ((x) ? (x) : ("(nil)")) /* Format string */
+#define _FMS(x) ((x) ? (x) : ("(nil)"))
 #endif
 
 /**
@@ -15,15 +15,15 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t elements;
-	unsigned int size;
+	size_t i;
+	unsigned int len;
 
-	for (elements = 0; h; elements++)
+	for (i = 0; h; i++)
 	{
-		size = (h->string == NULL) ? (0) : (h->size);
-		printf("[%d] %s\n", size, _FMS(h->string));
-		h = h->next_node;
+		len = (h->str == NULL) ? (0) : (h->len);
+		printf("[%d] %s\n", len, _FMS(h->str));
+		h = h->next;
 	}
 
-	return (elements);
+	return (i);
 }
