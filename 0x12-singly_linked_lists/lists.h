@@ -4,11 +4,13 @@
 #include <stddef.h>
 
 /**
-* struct list_s - node struct of singly linked list
-* @str: string to work with
-* @len: length of the string
-* @next: pointer to the address of the next node
-*/
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ */
 typedef struct list_s
 {
   char *str;
