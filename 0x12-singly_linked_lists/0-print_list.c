@@ -4,8 +4,7 @@
 
 #ifndef _PRINT_LIST
 #define _PRINT_LIST
-/* Format string to check if x = 0, if yes, nil, else returns x*/
-#define _FMS(x) ((x) ? (x) : ("(nil)"))
+#define _FMS(x) ((x) ? (x) : ("(nil)"))/*x>0, if yes, nil, else returns x*/
 #endif
 
 /**
