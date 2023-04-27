@@ -8,21 +8,21 @@
 #endif /* _PRINT_LIST */
 
 /**
- * print_list - Prints all elements of a list_t list
- * @h: Pointer to the singly-linked list
- * Return: number of nodes in the list
+ * print_list - function to output the elemens of a list
+ * @h: pointer to list_t
+ * Return: amount of nodes in the singly list
  */
 size_t print_list(const list_t *h)
 {
-	size_t i;
-	unsigned int len;
+	size_t elements;
+	unsigned int size;
 
-	for (i = 0; h; i++)
+	for (elements = 0; h; elements++)
 	{
-		len = (h->str == NULL) ? (0) : (h->len);
-		printf("[%d] %s\n", len, _FMS(h->str));
+		size = (h->string == NULL) ? (0) : (h->size);
+		printf("[%d] %s\n", size, _FMS(h->string));
 		h = h->next;
 	}
 
-	return (i);
+	return (elements);
 }
