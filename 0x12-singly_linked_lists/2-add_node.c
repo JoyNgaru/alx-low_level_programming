@@ -1,12 +1,7 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <stddef.h>
-/* functions we will use for this task*/
 
-int _strlen(const char *s);/*get the length of a string*/
-
-void *_strdup(const char *src); /*duplicate a string*/
-
+int _strlen(const char *s);
+void *_strdup(const char *src);
 /**
  * add_node - A function to add new node to the head
  * @head: ptr to the head thats pointed by list_t

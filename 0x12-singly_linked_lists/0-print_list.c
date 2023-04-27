@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib>
+#include <stdio.h> 
 #include "lists.h"
 
 #ifndef _PRINT_LIST
