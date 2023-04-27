@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
 
 #ifndef _PRINT_LIST
@@ -24,4 +26,3 @@ size_t print_list(const list_t *h)
 
 	return (i);
 }
-
