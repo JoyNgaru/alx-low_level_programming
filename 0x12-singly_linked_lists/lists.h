@@ -13,7 +13,7 @@ typedef struct list_struct
 {
 char *string;
 unsigned int size;
-struct list_s *next_node;
+struct list_struct *next_node;
 } list_t;
 
 size_t print_list(const list_t *h);
