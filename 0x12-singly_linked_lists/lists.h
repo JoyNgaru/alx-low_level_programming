@@ -4,17 +4,16 @@
 #include <stddef.h>
 
 /**
-* struct list_s - singly linked list
+* struct list_struct - snode struct of singly linked list
 * @string: string to work with
 * @size: length of the string
-* @next: points to the next node
-* Description: node struct of singly link list
+* @next_node: pointer to the address of the next node
 */
-typedef struct list_s
+typedef struct list_struct
 {
 char *string;
 unsigned int size;
-struct list_s *next;
+struct list_s *next_node;
 } list_t;
 
 size_t print_list(const list_t *h);
