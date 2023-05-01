@@ -6,14 +6,14 @@
 
 /**
  * struct listint_s - the singly linked list to work on
- * @elem: list's  elements
+ * @n: list's  elements
  * @next: the address for the next element
  * Return: the number of the nodes of the list
  */
 
 typedef struct listint_s
 {
-	int elem;
+	int n;
 	struct listint_s *next;
 } listint_t;
 
