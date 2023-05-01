@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * print_listint - Output all elements in the list
  * @h: pointer to the first node's address
