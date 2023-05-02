@@ -11,8 +11,6 @@ int pop_listint(listint_t **head)
 
 	if (head == NULL)
 	       return (0);
-	if (*head == NULL)
-		return (0);
 
 	node_data = (*head)->n;
 	temp = (*head)->next;
@@ -20,14 +18,4 @@ int pop_listint(listint_t **head)
 	*head = temp;
 
 	return (node_data);
-}
-
-
-
-
-
-
-
-
-
 }
