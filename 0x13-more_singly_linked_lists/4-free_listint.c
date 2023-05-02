@@ -7,7 +7,7 @@ void free_listint(listint_t *head)
 {
 	listint_t *last_node;
 
-	if (head)
+
 		do {
 		last_node = head->next;
 free(last_node);
