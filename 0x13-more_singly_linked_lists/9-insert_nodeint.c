@@ -2,16 +2,16 @@
 #include <stdlib.h>
 
 /**
- * insert_nodeint_at_index - add a new node at some point.
- * @head: pointer to the head
- * @idx: index of the node to insert.
- * @n: contnt to be put in the new node.
- * Return: pointer to the new node, or NULL on failure.
- */
+* insert_nodeint_at_index - add a new node at some point.
+* @head: pointer to the head
+* @idx: index of the node to insert.
+* @n: contnt to be put in the new node.
+* Return: pointer to the new node, or NULL on failure.
+*/
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *added_node;
-       listint_t *present_node;
+listint_t *present_node;
 	unsigned int content;
 
 	if (head == NULL)
