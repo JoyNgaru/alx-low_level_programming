@@ -1,4 +1,8 @@
 #include "main.h"
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <stdlib.h>
 /**
 * read_textfile - function that we will use to read
 * a text file and write its content on the POSIX standart output
