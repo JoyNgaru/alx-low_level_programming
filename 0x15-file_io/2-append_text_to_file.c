@@ -9,7 +9,7 @@
 /**
  * append_text_to_file - Function to append text at the end to a file
  * @filename: The filename to open and append in the text
- * @text_content: content to be added to the file 
+ * @text_content: content to be added to the file
  * The function opens the file specified by filename in append mode and writes
  * the contents of text_content to the end of the file.
  * If the operation is successful.
