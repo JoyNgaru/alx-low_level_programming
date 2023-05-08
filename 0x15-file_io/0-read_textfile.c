@@ -1,14 +1,18 @@
 #include "main.h"
 /**
-* read_textfile - function that we will use to read a text file and write its content on the POSIX standart output
+* read_textfile - function that we will use to read
+* a text file and write its content on the POSIX standart output
 * @filename: Name of text file.
 * @letters: Number of letters it should read and print.
-* The function `read_textfile` reads a text file and prints it to the POSIX standard output.
+* The function `read_textfile` reads a text file and
+* prints it to the POSIX standard output.
 * It takes two arguments: `filename`, which is the name of the text file,
 * and `letters`, which is the number of letters it should read and print¹.
 * The function opens the file using the `open()` system call,
-* reads the contents of the file into a buffer using the `read()` system call,
-* writes the contents of the buffer to standard output using the `write()` system call,
+* reads the contents of the file into a buffer using
+* the `read()` system call,
+* writes the contents of the buffer to standard
+* output using the `write()` system call,
 * closes the file using the `close()` system call¹.
 * Return: number of letters that were read, else 0
 */
@@ -31,19 +35,21 @@ size_t read_textfile(const char *filename, size_t letters)
 		return (0);/* if malloc failed we exit */
 
 	content_read = read(file_des, buff_str, letters);
-	if (content_read == -1) /*if the content being read is null then free the buffer and exit*/
+	if (content_read == -1)
+	/*if the content being read is null then free the buffer and exit*/
 	{
 		free(buff_str);
 		return (0);
-	
-	}/*content manipulation begins*/
+
+	} /*content manipulation begins*/
 
 	content_write = write(STDOUT_FILENO, buff_str, content_read);
 	if (content_write == -1 || content_read != content_write)
 	{
 		free(buff_str);
-		return(0);
-	}/*look if the content read is similar to one output and is correct, if not clear buffer and exit*/
+		return (0);
+	}
+/*look if the content read==output & correct, if not clear buffer and exit*/
 	free(buff_str);/*clear extra space*/
 	close(file_des);/*close the file*/
 	return (content_write); /*ouptut the content of the file*/
