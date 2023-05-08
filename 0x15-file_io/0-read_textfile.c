@@ -23,7 +23,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int file_des, content_read, content_write;
-	char buff_str;
+	char *buff_str;
 /*Let's check if the file is existent, if not, we return 0*/
 	if (filename == NULL)
 		return (0);
