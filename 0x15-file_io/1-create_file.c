@@ -12,10 +12,9 @@
  * This code defines a function called create_file
  * that takes two arguments: filename and text_content.
  * The function creates a file with the specified filename
- * and writes the text_content string to the file. 
- * If the file already exists, its content is truncated 
+ * and writes the text_content string to the file.
+ * If the file already exists, its content is truncated
  * and overwritten with the new content
- * 
  * Return: On success, 1, otherwise, -1.
  */
 int create_file(const char *filename, char *text_content)
